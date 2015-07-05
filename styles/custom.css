@@ -1,0 +1,30 @@
+body {
+    background-color: #f9f9f9;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+.navbar-brand {
+    padding: 9px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    text-transform: capitalize;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Roboto Condensed","Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+.navbar-default .navbar-nav>li {
+    transition: 0.3s;
+}
+
+.navbar-default .navbar-nav>li:hover {
+    background-color: #004485;
+} 
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
