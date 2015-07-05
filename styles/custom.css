@@ -28,3 +28,28 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
     color: #ffffff;
 }
+
+#advertiser-space {
+    overflow: hidden;
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    background-color: #000;
+}
+
+#advertiser-ad {
+    margin: 0 auto;
+}
+
+#ad-bg {
+    width: 100%;
+}
+
+#main-bg {
+    background: url(../images/bg.jpg) repeat-x fixed #f9f9f9;
+}
+
+#center-container {
+    background-color: white;
+    min-height: 1200px;
+}
