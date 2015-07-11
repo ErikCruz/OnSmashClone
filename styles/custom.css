@@ -71,7 +71,6 @@ a:active {
 #center-container {
     border: 1px solid #d9d9d9;
     background-color: white;
-    min-height: 1200px;
 }
 
 .feature-header {
@@ -85,14 +84,19 @@ a:active {
 }
 
 .featured-image {
+    transition: 0.3s;
+    opacity: 0.9;
     position: relative;
-    max-width: 750px;
-    max-height: 418px;
     margin: 0 auto;
     cursor: pointer;
 }
 
+.featured-image:hover {
+    opacity: 1;
+}
+
 .featured-image img {
+    transition: 0.3s;
     border-radius: 5px;
 }
 
@@ -135,31 +139,59 @@ a:active {
 .video {
     margin: 1.1%;
     float: left;
-    width: 31.1%;
 }
 
 .video img {
+    border-radius: 5px;
+    transition: 0.2s;
     width: 100%;
 }
 
+.video:hover > a > img {
+    opacity: 0.8;
+}
+
+@media only screen and (min-width : 1201px) {
+    .video {
+        width: 31.1%;
+    }
+    .container {
+        width: 970px;
+    }
+}
+
 @media only screen and (max-width : 1200px) {
-    
+    .video {
+       width: 31.1%;
+   }
+   .container {
+       width: 970px;
+   }
 }
 
 @media only screen and (max-width : 992px) {
    .container {
        width: 100%;
-   } 
+   }
+   .video {
+       width: 31.1%;
+   }
 }
 
 @media only screen and (max-width : 767px) {
-    
+    .video {
+       width: 31.1%;
+   }
 }
 
 @media only screen and (max-width : 480px) {
-    
+    .video {
+       width: 47.8%;
+   }
 }
 
 @media only screen and (max-width : 320px) {
-   
+   .video {
+       width: 47.8%;
+   }
 }
