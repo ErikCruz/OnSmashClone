@@ -184,6 +184,26 @@ a:active {
     
 }
 
+.showmore {
+  padding: 5px;
+  text-transform: uppercase;
+  border: 1px solid #d3d3d3;
+  font-weight: 600;
+  font-size: 23px;
+  margin: 24px auto;
+  color: #333;
+  max-width: 145px;
+  text-align: center;
+  font-family: Oswald,sans;
+  vertical-align: baseline;
+  cursor: pointer;
+  background-image: linear-gradient(to top,#E7E7E7 0,#FAFAFA 100%);
+}
+
+.showmore > p {
+    margin: 0;
+}
+
 @media only screen and (min-width : 1201px) {
     .container {
         width: 970px;
