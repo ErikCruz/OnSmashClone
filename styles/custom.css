@@ -87,21 +87,14 @@ a:active {
 }
 
 .featured-image {
-    transition: 0.3s;
-    opacity: 0.9;
     position: relative;
     margin: 0 auto;
     cursor: pointer;
 }
 
-.featured-image:hover {
-    opacity: 1;
-}
-
 .featured-image img {
     width: 938px;
     height: 355px;
-    transition: 0.3s;
     border-radius: 5px;
 }
 
