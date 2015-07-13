@@ -131,7 +131,7 @@ a:active {
     width: 300px;
     display: inline-block;
     vertical-align: top;
-    margin: 5px;
+    margin: 10px 5px;
 }
 
 .video > a > p {
