@@ -197,9 +197,17 @@ a:active {
     margin: 0;
 }
 
+.post-title {
+    font-weight: 600;
+    font-family: oswald, sans-serif;
+}
+
 @media only screen and (min-width : 1201px) {
     .container {
         width: 970px;
+    }
+    article {
+        width: 650px;
     }
 }
 
@@ -207,18 +215,28 @@ a:active {
    .container {
        width: 970px;
    }
+   article {
+       width: 650px;
+   }
 }
 
 @media only screen and (max-width : 992px) {
    .container {
        width: 100%;
    }
+   article {
+       width: 100%;
+   }
 }
 
 @media only screen and (max-width : 767px) {
-   
+   article {
+       width: 100%;
+   }
 }
 
 @media only screen and (max-width : 480px) {
-    
+    article {
+        width: 100%;
+    }
 }
