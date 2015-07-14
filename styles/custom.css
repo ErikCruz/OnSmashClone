@@ -160,7 +160,6 @@ a:active {
 }
 
 .titulo {
-    border-bottom: 5px solid rgb(44, 62, 80);
     border-radius: 0 0 5px 5px;
     padding-bottom: 10px;
     width: 100%;
@@ -200,6 +199,13 @@ a:active {
 .post-title {
     font-weight: 600;
     font-family: oswald, sans-serif;
+    text-transform: capitalize;
+}
+
+.sidebar {
+    width: 300px;
+    height: 400px;
+    float: right;
 }
 
 @media only screen and (min-width : 1201px) {
@@ -207,7 +213,8 @@ a:active {
         width: 970px;
     }
     article {
-        width: 650px;
+        width: 620px;
+        float: left;
     }
 }
 
@@ -216,7 +223,8 @@ a:active {
        width: 970px;
    }
    article {
-       width: 650px;
+       width: 620px;
+       float: left;
    }
 }
 
