@@ -208,6 +208,21 @@ a:active {
     float: right;
 }
 
+#video {
+    margin-bottom: 10px;
+}
+
+.nav-tabs > li {
+    font-family: oswald;
+    font-size: 20px;
+}
+
+.nav-tabs > .views {
+    float: right;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
 @media only screen and (min-width : 1201px) {
     .container {
         width: 970px;
