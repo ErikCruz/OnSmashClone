@@ -58,10 +58,14 @@
                     
                     <ul class="nav nav-tabs">
                       <li class='views'>124,852 views</li>
-                      <li role="presentation" class="active"><a href="#">Description</a></li>
-                      <li role="presentation"><a href="#">Embed</a></li>
+                      <li role="presentation" class="active"><a aria-controls="description" href="#description" data-toggle="tab">Description</a></li>
+                      <li role="presentation"><a aria-controls="embed" href="#embed" data-toggle="tab">Embed</a></li>
                     </ul>
 
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="description">This is the description</div>
+                        <div role="tabpanel" class="tab-pane" id="embed">This is the embed info</div>
+                    </div>
                     
                 </article>
                 
