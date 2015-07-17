@@ -227,6 +227,25 @@ a:active {
     padding: 10px;
 }
 
+.comments {
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#comment-button {
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    background-color: #2c3e50;
+    float: right;
+    margin-top: 15px;
+}
+
 @media only screen and (min-width : 1201px) {
     .container {
         width: 970px;
