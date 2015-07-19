@@ -249,9 +249,20 @@ textarea {
 
 .comment {
     margin-top: 15px;
+    padding: 10px;
     background-color: #ECECEC;
-    min-height: 90px;
+    min-height: 120px;
     border-radius: 5px;
+}
+
+.usr_info {
+    width: 14%;
+    float: left;
+}
+
+.comment_text {
+    float: right;
+    width: 81%;
 }
 
 @media only screen and (min-width : 1201px) {
