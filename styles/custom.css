@@ -256,13 +256,25 @@ textarea {
 }
 
 .usr_info {
-    width: 14%;
+    width: 19%;
     float: left;
+    text-align: center;
+    font-size: 12px;
+}
+
+.usr_info > img {
+    margin: 0 auto;
+}
+
+.usr_username {
+    text-overflow: ellipsis;
+    overflow: auto;
+    margin-top: 5px;
 }
 
 .comment_text {
     float: right;
-    width: 81%;
+    width: 78%;
 }
 
 @media only screen and (min-width : 1201px) {
