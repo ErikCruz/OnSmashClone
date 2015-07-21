@@ -207,6 +207,7 @@ a:active {
     width: 300px;
     height: 400px;
     float: right;
+    margin-top: 15px;
 }
 
 #video {
@@ -279,6 +280,31 @@ textarea {
 
 .vermascomentarios {
     font-size: 14px;
+}
+
+.similar-video {
+    margin-top: 15px;
+    height: 90px;
+}
+
+.similar-video:nth-child(odd) {
+    background-color: rgb(244, 244, 244);
+}
+
+.similar-video > a > img {
+    float: left;
+    margin-right: 10px;
+}
+
+.similar-title {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.similar-title > a {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Roboto Condensed","Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
 @media only screen and (min-width : 1201px) {
