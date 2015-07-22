@@ -75,6 +75,7 @@ a:active {
     padding-bottom: 15px;
     border: 1px solid #d9d9d9;
     background-color: white;
+    min-height: 100vh;
 }
 
 .feature-header {
@@ -307,6 +308,21 @@ textarea {
     font-family: "Roboto Condensed","Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
+.single-page-title {
+    text-align: center;
+    font-family: oswald;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.form-container {
+    margin: 0 auto;
+}
+
+.help-block {
+    color: grey;
+}
+
 @media only screen and (min-width : 1201px) {
     .container {
         width: 970px;
@@ -314,6 +330,9 @@ textarea {
     article {
         width: 620px;
         float: left;
+    }
+    .form-container {
+        width: 50%;
     }
 }
 
@@ -325,6 +344,9 @@ textarea {
        width: 620px;
        float: left;
    }
+   .form-container {
+       width: 50%;
+   }
 }
 
 @media only screen and (max-width : 992px) {
@@ -334,16 +356,25 @@ textarea {
    article {
        width: 100%;
    }
+   .form-container {
+       width: 100%;
+   }
 }
 
 @media only screen and (max-width : 767px) {
    article {
        width: 100%;
    }
+   .form-container {
+       width: 100%;
+   }
 }
 
 @media only screen and (max-width : 480px) {
     article {
+        width: 100%;
+    }
+    .form-container {
         width: 100%;
     }
 }
