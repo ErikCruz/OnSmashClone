@@ -3,6 +3,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #333;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    padding-top: 60px;
 }
 
 a:link {
@@ -51,7 +52,6 @@ a:active {
 #advertiser-space {
     overflow: hidden;
     display: flex;
-    margin-top: 60px;
     width: 100%;
     background-color: #000;
 }
