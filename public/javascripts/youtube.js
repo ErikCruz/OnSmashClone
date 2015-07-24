@@ -27,7 +27,7 @@ $(document).ready(function() {
   var youtubeplayer = $('#mymovie').data('player');
   
   $( "#video-player" ).hover(function() {
-      $('.rapvlog_player_controls_wrap').css("height", "48px");
+      $('.rapvlog_player_controls_wrap').css("height", "55px");
     }, function() {
       $('.rapvlog_player_controls_wrap').css("height", "0px");
     });
