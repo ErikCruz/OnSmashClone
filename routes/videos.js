@@ -3,7 +3,11 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next){
-    res.render('index', {title: 'Videos'});    
+    res.render('videos/index', {title: 'Videos'});    
+});
+
+router.get('/:videoID', function(req, res, next){
+   res.render('videos/single', {title:'Video Title'}); 
 });
 
 module.exports = router;
