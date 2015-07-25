@@ -69,17 +69,18 @@ $(document).ready(function() {
 
 
   function onEnded(event) {
-    $('.rapvlog_player_controls_wrap').css("height", "50px");
+    $('.rapvlog_player_controls_wrap').css("height", "55px");
     clearInterval(playBuffer);
     clearInterval(loadBuffer);
     $('.rapvlog_player_controls_time').html("00:00 / 00:00");
     $('.rapvlog_player_controls_buffer').css("width", "0px");
     $('.rapvlog_player_controls_progress').css("width", "0px");
+    $('.rapvlog_player_controls_playbutton > i').removeClass("fa-pause").addClass("fa-play");
   }
 
   //onPause function
   function onPause(event) {
-    $('.rapvlog_player_controls_wrap').css("height", "50px");
+    $('.rapvlog_player_controls_wrap').css("height", "55px");
     clearInterval(playBuffer);
     clearInterval(loadBuffer);
   	$('.rapvlog_player_controls_playbutton > i').removeClass("fa-pause").addClass("fa-play");
@@ -218,5 +219,5 @@ $(document).ready(function() {
     // adjust the volume here;
     youtubeplayer.p.setVolume(percentage);    
   }
-
+  
 });
