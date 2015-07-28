@@ -7,5 +7,7 @@ var videoSchema = mongoose.Schema({
     description: {type: String, required: true},
     date_posted: {type: Date, default: Date.now()},
     video_link: {type: String, required: true},
-    comments: [{user: String, comment: String, posted_on: Date}],
+    comments: [{user: String, comment: String, posted_on: Date}]
 });
+
+module.exports = mongoose.model('Video', videoSchema);
