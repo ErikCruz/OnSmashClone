@@ -73,7 +73,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #2c3e50;
+  background: #b00511;
 }
 
 .rapvlog_player_controls_volume_handle {
@@ -133,7 +133,7 @@ body {
 .rapvlog_player_controls_progress {
   position: relative;
   height: 100%;
-  background: #2c3e50;
+  background: #b00511;
   width: 0%;
 }
 
