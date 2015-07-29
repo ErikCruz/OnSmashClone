@@ -22,8 +22,8 @@ router.get('/:videoID', function(req, res, next){
 });
 
 // embed view for video
-router.get('/embed/:videoID', function(req, res, next){
-   res.render('videos/embed', {title: 'Video Title', layout: 'embed_layout.hbs'});
-});
+// router.get('/embed/:videoID', function(req, res, next){
+//   res.render('videos/embed', {title: 'Video Title', layout: 'embed_layout.hbs'});
+// });
 
 module.exports = router;
