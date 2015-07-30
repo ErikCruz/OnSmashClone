@@ -1,9 +1,9 @@
 <h1 class='single-page-title'>{{title}}</h1>
 <div class='form-container'>
-    <form>
+    <form action='/videos/new' method='post'>
         <div class='form-group'>
             <label for="title">Title:</label>
-            <input type='text' class='form-control' id='title' placeholder='Video Title'>
+            <input type='text' class='form-control' id='title' name='title' placeholder='Video Title'>
         </div>
         <div class='form-group'>
             <label for="username">Description:</label>

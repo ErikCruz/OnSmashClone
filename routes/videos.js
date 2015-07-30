@@ -16,6 +16,10 @@ router.get('/new', function(req, res, next){
    res.render('videos/new',{title: 'New Video'}); 
 });
 
+router.post('/new', function(req, res, next){
+   res.send(req.body.title); 
+});
+
 // get single video
 router.get('/:videoID', function(req, res, next){
    res.render('videos/single', {title:'Video Title'}); 
