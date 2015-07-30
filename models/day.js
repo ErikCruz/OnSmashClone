@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-
+var moment = require("moment");
 
 var daySchema = mongoose.Schema({
     the_day: {type: String},
@@ -7,7 +7,13 @@ var daySchema = mongoose.Schema({
 });
 
 daySchema.pre('save', function(next){
+    var theDay = moment(Date.now());
+    var month = String(theDay.month());
+    var day = String(theDay.date());
+    var year = String(theDay.year());
     
+    var theDate = year + '-' + month + '-' + day;
+    this.the_day = theDate;
 });
 
 module.exports = mongoose.model('Day', daySchema);
