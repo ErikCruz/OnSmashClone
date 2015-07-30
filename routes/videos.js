@@ -1,5 +1,6 @@
 var express = require('express');
-var Videos = require('../models/video');
+var Video = require('../models/video');
+var Day = require('../models/day');
 var router = express.Router();
 
 // get all videos for index view
@@ -17,7 +18,16 @@ router.get('/new', function(req, res, next){
 });
 
 router.post('/new', function(req, res, next){
-   res.send(req.body.title); 
+   var today = new Day({});
+   today.save(function(err, theday){
+       if(err) throw err;
+       res.json(theday);
+   });
+   // try to see if there are any videos for today
+   
+   // if there are append video to day videos array
+   
+   // otherwise create a new day for today and then add video
 });
 
 // get single video

@@ -14,6 +14,7 @@ daySchema.pre('save', function(next){
     
     var theDate = year + '-' + month + '-' + day;
     this.the_day = theDate;
+    next();
 });
 
 module.exports = mongoose.model('Day', daySchema);
