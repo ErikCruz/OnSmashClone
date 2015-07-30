@@ -24,14 +24,34 @@ router.post('/new', function(req, res, next){
       if(err) throw err;
       // if today is already created it obviously has videos
       if(day != null) {
-        
+        var video = new Video({title: req.body.title, description: req.body.description, video_link: req.body.video_link});
+        video.save(function(err, vid) {
+            if(err) throw err;
+            // append video to day videos array
+            // day.videos.push(vid._id);
+            // res.render('videos/index', {title: 'Videos'});
+            Day.update({_id: day._id}, {$push: {"videos": vid._id}}, function(err, updatedDay){
+                if(err) throw err;
+                res.send(updatedDay);
+            });
+        });
       } 
       // else today is not created and we create day object and add video to it
       else {
         var today = new Day({});
         today.save(function(err, theday){
            if(err) throw err;
-           res.send(theday);
+           var video = new Video({title: req.body.title, description: req.body.description, video_link: req.body.video_link});
+           video.save(function(err, vid) {
+           if(err) throw err;
+           // append video to today videos array
+            // theday.videos.push(vid);
+            // res.render('videos/index', {title: 'Videos'});
+            Day.update({_id: theday._id}, {$push: {"videos": vid._id}}, function(err, updatedDay){
+                if(err) throw err;
+                res.send(updatedDay);
+            });
+           });
         });
       }
       
