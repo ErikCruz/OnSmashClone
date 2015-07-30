@@ -3,7 +3,7 @@ var moment = require("moment");
 
 var daySchema = mongoose.Schema({
     the_day: {type: String},
-    videos: {type: mongoose.Schema.Types.ObjectId, ref: 'Video'},
+    videos: {type: [mongoose.Schema.Types.ObjectId], ref: 'Video'},
     created: {type: Date, default: Date.now()}
 });
 

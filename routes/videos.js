@@ -1,6 +1,7 @@
 var express = require('express');
 var Video = require('../models/video');
 var Day = require('../models/day');
+var moment = require('moment');
 var router = express.Router();
 
 // get all videos for index view
@@ -18,26 +19,28 @@ router.get('/new', function(req, res, next){
 });
 
 router.post('/new', function(req, res, next){
-   var today = new Day({});
-   today.save(function(err, theday){
-       if(err) throw err;
-       res.json(theday);
+   // look for today in database
+   Day.findOne({the_day: moment().format("YYYY-MM-DD")}, function(err, day){
+      if(err) throw err;
+      // if today is already created it obviously has videos
+      if(day != null) {
+        
+      } 
+      // else today is not created and we create day object and add video to it
+      else {
+        var today = new Day({});
+        today.save(function(err, theday){
+           if(err) throw err;
+           res.send(theday);
+        });
+      }
+      
    });
-   // try to see if there are any videos for today
-   
-   // if there are append video to day videos array
-   
-   // otherwise create a new day for today and then add video
 });
 
 // get single video
 router.get('/:videoID', function(req, res, next){
    res.render('videos/single', {title:'Video Title'}); 
 });
-
-// embed view for video
-// router.get('/embed/:videoID', function(req, res, next){
-//   res.render('videos/embed', {title: 'Video Title', layout: 'embed_layout.hbs'});
-// });
 
 module.exports = router;
