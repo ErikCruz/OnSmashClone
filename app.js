@@ -4,13 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://'+process.env.IP+'/onsmash');
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function (callback) {
-  console.log('successfully connected to database');
-});
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
